@@ -1,0 +1,215 @@
+<div class="background" *ngFor="let data of KPI">
+        <mat-card-title>  {{data.Mes}}  </mat-card-title>
+
+        <div class="row">
+                 <!-- inicio tarjeta -->
+                <div class="col-lg-3">
+                        <mat-card class="card">
+                                <div class="card-body">
+                                        <div class="d-flex no-block">
+                                                <div class="m-r-10 align-self-center">
+                                                        <span class="lstick m-r-10"></span>
+                                                        <mat-icon aria-hidden="false">sentiment_satisfied</mat-icon>
+                                                </div>
+                                                
+                                                <div class="align-self-center">
+                                                        <mat-card-subtitle class="text-muted m-t-5 m-b-0">Porcentaje Satisfacción</mat-card-subtitle>
+                                                        <h2 class="m-t-0"> {{data.Porcentaje_SATI | percent }} </h2>
+                                                        <mat-card-subtitle class="text-muted m-t-5 m-b-0">Cuartil Satisfacción</mat-card-subtitle>
+                                                        <h2 class="m-t-0"> {{data.Cuartil_Sati}} </h2>
+                                                </div>
+                                        </div>
+                                </div>
+                        </mat-card> 
+                </div>
+                <!-- fin tarjeta -->
+                 <!-- inicio tarjeta -->
+                 <div class="col-lg-3">
+                        <mat-card class="card">
+                                <div class="card-body">
+                                        <div class="d-flex no-block">
+                                                <div class="m-r-10 align-self-center">
+                                                        <span class="lstick m-r-10"></span>
+                                                        <mat-icon aria-hidden="false">recommend</mat-icon>
+                                                </div>
+                                                
+                                                <div class="align-self-center">
+                                                        <mat-card-subtitle class="text-muted m-t-5 m-b-0">Porcentaje NPS</mat-card-subtitle>
+                                                        <h2 class="m-t-0"> {{data.Porcentaje_NPS | percent}} </h2>
+                                                        <mat-card-subtitle class="text-muted m-t-5 m-b-0">Cuartil NPS</mat-card-subtitle>
+                                                        <h2 class="m-t-0"> {{data.Cuartil_NPS}} </h2>
+                                                </div>
+                                        </div>
+                                </div>
+                        </mat-card> 
+                </div>
+                <!-- fin tarjeta -->
+                 <!-- inicio tarjeta -->
+                 <div class="col-lg-3">
+                        <mat-card class="card">
+                                <div class="card-body">
+                                        <div class="d-flex no-block">
+                                                <div class="m-r-10 align-self-center">
+                                                        <span class="lstick m-r-10"></span>
+                                                        <mat-icon aria-hidden="false">construction</mat-icon>
+                                                </div>
+                                                
+                                                <div class="align-self-center">
+                                                        <mat-card-subtitle class="text-muted m-t-5 m-b-0">Porcentaje Resolución</mat-card-subtitle>
+                                                        <h2 class="m-t-0"> {{data.Porcentaje_Resolucion | percent }} </h2>
+                                                        <mat-card-subtitle class="text-muted m-t-5 m-b-0">Cuartil Resolucion</mat-card-subtitle>
+                                                        <h2 class="m-t-0"> {{data.Cuartil_Resolucion}} </h2>
+                                                </div>
+                                        </div>
+                                </div>
+                        </mat-card> 
+                </div>
+                <!-- fin tarjeta -->
+                 <!-- inicio tarjeta -->
+                 <div class="col-lg-3">
+                        <mat-card class="card">
+                                <div class="card-body">
+                                        <div class="d-flex no-block">
+                                                <div class="m-r-10 align-self-center">
+                                                        <span class="lstick m-r-10"></span>
+                                                        <mat-icon aria-hidden="false">people</mat-icon>
+                                                </div>
+                                                
+                                                <div class="align-self-center">
+                                                        <mat-card-subtitle class="text-muted m-t-5 m-b-0">Cantidad de encuestas</mat-card-subtitle>
+                                                        <h2 class="m-t-0"> {{data.Encuestas}} </h2>
+                                                        <mat-card-subtitle class="text-muted m-t-5 m-b-0">Atendidos totales</mat-card-subtitle>
+                                                        <h2 class="m-t-0"> {{data.Atentidos_Totales}} </h2>
+                                                </div>
+                                        </div>
+                                </div>
+                        </mat-card> 
+                </div>
+                <!-- fin tarjeta -->
+                 <!-- inicio tarjeta -->
+                 <div class="col-lg-3">
+                        <mat-card class="card">
+                                <div class="card-body">
+                                        <div class="d-flex no-block">
+                                                <div class="m-r-10 align-self-center">
+                                                        <span class="lstick m-r-10"></span>
+                                                        <mat-icon aria-hidden="false">lock_clock</mat-icon>
+                                                </div>
+                                                
+                                                <div class="align-self-center">
+                                                        <mat-card-subtitle class="text-muted m-t-5 m-b-0">Casos por hora</mat-card-subtitle>
+                                                        <h2 class="m-t-0"> {{data.Casos_X_Hora}} </h2>
+                                                        <mat-card-subtitle class="text-muted m-t-5 m-b-0">Cuartil casos por hora</mat-card-subtitle>
+                                                        <h2 class="m-t-0"> {{data.Cuartil_CXH}} </h2>
+                                                </div>
+                                        </div>
+                                </div>
+                        </mat-card> 
+                </div>
+                <!-- fin tarjeta -->
+                 <!-- inicio tarjeta -->
+                 <div class="col-lg-3">
+                        <mat-card class="card">
+                                <div class="card-body">
+                                        <div class="d-flex no-block">
+                                                <div class="m-r-10 align-self-center">
+                                                        <span class="lstick m-r-10"></span>
+                                                        <mat-icon aria-hidden="false">settings_power</mat-icon>
+                                                </div>
+                                                
+                                                <div class="align-self-center">
+                                                        <mat-card-subtitle class="text-muted m-t-5 m-b-0">Deslogueo</mat-card-subtitle>
+                                                        <h2 class="m-t-0"> {{data.Deslogueo }} </h2>
+                                                        <mat-card-subtitle class="text-muted m-t-5 m-b-0">Porcentaje Deslogueo</mat-card-subtitle>
+                                                        <h2 class="m-t-0"> {{data.Porcentaje_Deslogueo | percent}} </h2>
+                                                </div>
+                                        </div>
+                                </div>
+                        </mat-card> 
+                </div>
+                <!-- fin tarjeta -->
+                 <!-- inicio tarjeta -->
+                 <div class="col-lg-3">
+                        <mat-card class="card">
+                                <div class="card-body">
+                                        <div class="d-flex no-block">
+                                                <div class="m-r-10 align-self-center">
+                                                        <span class="lstick m-r-10"></span>
+                                                        <mat-icon aria-hidden="false">settings_power</mat-icon>
+                                                </div>
+                                                
+                                                <div class="align-self-center">
+                                                        <mat-card-subtitle class="text-muted m-t-5 m-b-0">Deslogueo Real</mat-card-subtitle>
+                                                        <h2 class="m-t-0"> {{data.Porcentaje_Deslogueo_Real}} </h2>
+                                                        <mat-card-subtitle class="text-muted m-t-5 m-b-0">CV Deslogueo Real</mat-card-subtitle>
+                                                        <h2 class="m-t-0"> {{data.Cuartil_Deslogueo }} </h2>
+                                                </div>
+                                        </div>
+                                </div>
+                        </mat-card> 
+                </div>
+                <!-- fin tarjeta -->
+                 <!-- inicio tarjeta -->
+                 <div class="col-lg-3">
+                        <mat-card class="card">
+                                <div class="card-body">
+                                        <div class="d-flex no-block">
+                                                <div class="m-r-10 align-self-center">
+                                                        <span class="lstick m-r-10"></span>
+                                                        <mat-icon aria-hidden="false">elderly</mat-icon>
+                                                </div>
+                                                
+                                                <div class="align-self-center">
+                                                        <mat-card-subtitle class="text-muted m-t-5 m-b-0">Llegadas tarde</mat-card-subtitle>
+                                                        <h2 class="m-t-0"> {{data.Llegadas_Tarde }} </h2>
+                                                        <mat-card-subtitle class="text-muted m-t-5 m-b-0">Horas producidas</mat-card-subtitle>
+                                                        <h2 class="m-t-0"> {{data.Horas_Producidas}} </h2>
+                                                </div>
+                                        </div>
+                                </div>
+                        </mat-card> 
+                </div>
+                <!-- fin tarjeta -->
+                 <!-- inicio tarjeta -->
+                 <div class="col-lg-3">
+                        <mat-card class="card">
+                                <div class="card-body">
+                                        <div class="d-flex no-block">
+                                                <div class="m-r-10 align-self-center">
+                                                        <span class="lstick m-r-10"></span>
+                                                        <mat-icon aria-hidden="false">bathroom</mat-icon>
+                                                </div>
+                                                
+                                                <div class="align-self-center">
+                                                        <mat-card-subtitle class="text-muted m-t-5 m-b-0">Utilización</mat-card-subtitle>
+                                                        <h2 class="m-t-0"> {{data.Utilizacion}} </h2>
+                                                        <mat-card-subtitle class="text-muted m-t-5 m-b-0">Cuartil Utilizacion</mat-card-subtitle>
+                                                        <h2 class="m-t-0"> {{data.CV_Utilizacion}} </h2>
+                                                </div>
+                                        </div>
+                                </div>
+                        </mat-card> 
+                </div>
+                <!-- fin tarjeta -->
+                 <!-- inicio tarjeta -->
+                 <div class="col-lg-3">
+                        <mat-card class="card">
+                                <div class="card-body">
+                                        <div class="d-flex no-block">
+                                                <div class="m-r-10 align-self-center">
+                                                        <span class="lstick m-r-10"></span>
+                                                        <mat-icon aria-hidden="false">emoji_events</mat-icon>
+                                                </div>
+                                                
+                                                <div class="align-self-center">
+                                                        <mat-card-subtitle class="text-muted m-t-5 m-b-0">Premios</mat-card-subtitle>
+                                                        <h2 class="m-t-0"> {{data.Premios}} </h2>
+                                                </div>
+                                        </div>
+                                </div>
+                        </mat-card> 
+                </div>
+                <!-- fin tarjeta -->
+        </div>
+      
+</div>
