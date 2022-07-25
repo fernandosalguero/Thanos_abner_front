@@ -9,6 +9,7 @@ import { BusquedasService } from '../../../services/busquedas.service';
 import { MedicoService } from '../../../services/medico.service';
 import { ModalImagenService } from '../../../services/modal-imagen.service';
 
+
 @Component({
   selector: 'app-medicos',
   templateUrl: './medicos.component.html',
@@ -16,6 +17,8 @@ import { ModalImagenService } from '../../../services/modal-imagen.service';
   ]
 })
 export class MedicosComponent implements OnInit, OnDestroy {
+
+  selected: Date | null;
 
   public cargando: boolean = true;
   public medicos: Medico[] = [];
@@ -91,5 +94,9 @@ export class MedicosComponent implements OnInit, OnDestroy {
     })
 
   }
+
+
+
+
 
 }

@@ -19,19 +19,19 @@ import { AdminGuard } from '../guards/admin.guard';
 
 
 const childRoutes: Routes = [
-  { path: '', component: DashboardComponent, data: { titulo: 'Dashboard' } },
+  { path: '', component: DashboardComponent, data: { titulo: 'Reportes' } },
   { path: 'account-settings', component: AccountSettingsComponent, data: { titulo: 'Ajustes de cuenta' }},
   { path: 'buscar/:termino', component: BusquedaComponent, data: { titulo: 'Busquedas' }},
-  { path: 'grafica1', component: Grafica1Component, data: { titulo: 'Gráfica #1' }},
+  { path: 'grafica1', component: Grafica1Component, data: { titulo: 'Metricas' }},
   { path: 'perfil', component: PerfilComponent, data: { titulo: 'Perfil de usuario' }},
-  { path: 'progress', component: ProgressComponent, data: { titulo: 'ProgressBar' }},
-  { path: 'promesas', component: PromesasComponent, data: { titulo: 'Promesas' }},
-  { path: 'rxjs', component: RxjsComponent, data: { titulo: 'RxJs' }},
+  { path: 'progress', component: ProgressComponent, data: { titulo: 'Programacion' }},
+  { path: 'promesas', component: PromesasComponent, data: { titulo: 'Metricas del equipo' }},
+  { path: 'rxjs', component: RxjsComponent, data: { titulo: 'Metricas individuales' }},
 
   // Mantenimientos
-  { path: 'hospitales', component: HospitalesComponent, data: { titulo: 'Matenimiento de Hospitales' }},
-  { path: 'medicos', component: MedicosComponent, data: { titulo: 'Matenimiento de Medicos' }},
-  { path: 'medico/:id', component: MedicoComponent, data: { titulo: 'Matenimiento de Medicos' }},
+  { path: 'hospitales', component: HospitalesComponent, data: { titulo: 'Metriacas individuales' }},
+  { path: 'medicos', component: MedicosComponent, data: { titulo: 'Programacion' }},
+  { path: 'medico/:id', component: MedicoComponent, data: { titulo: 'Programacion' }},
 
   // Rutas de Admin
   { path: 'usuarios', canActivate: [ AdminGuard ], component: UsuariosComponent, data: { titulo: 'Matenimiento de Usuarios' }},
