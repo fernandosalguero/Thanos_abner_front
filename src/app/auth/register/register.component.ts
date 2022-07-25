@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { FormBuilder, Validators, FormGroup } from '@angular/forms';
+import { UntypedFormBuilder, Validators, UntypedFormGroup } from '@angular/forms';
 import Swal from 'sweetalert2'
 
 import { UsuarioService } from '../../services/usuario.service';
@@ -24,7 +24,7 @@ export class RegisterComponent {
     validators: this.passwordsIguales('password', 'password2')
   });
 
-  constructor( private fb: FormBuilder,
+  constructor( private fb: UntypedFormBuilder,
                private usuarioService: UsuarioService,
                private router: Router ) { }
 
@@ -79,7 +79,7 @@ export class RegisterComponent {
 
   passwordsIguales(pass1Name: string, pass2Name: string ) {
 
-    return ( formGroup: FormGroup ) => {
+    return ( formGroup: UntypedFormGroup ) => {
 
       const pass1Control = formGroup.get(pass1Name);
       const pass2Control = formGroup.get(pass2Name);

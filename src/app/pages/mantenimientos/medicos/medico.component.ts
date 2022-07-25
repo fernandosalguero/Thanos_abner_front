@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
 import Swal from 'sweetalert2';
 
@@ -18,7 +18,7 @@ import { delay } from 'rxjs/operators';
 })
 export class MedicoComponent implements OnInit {
 
-  public medicoForm: FormGroup;
+  public medicoForm: UntypedFormGroup;
   public hospitales: Hospital[] = [];
   
   public medicoSeleccionado: Medico;
@@ -26,7 +26,7 @@ export class MedicoComponent implements OnInit {
 
 
 
-  constructor( private fb: FormBuilder,
+  constructor( private fb: UntypedFormBuilder,
                private hospitalService: HospitalService,
                private medicoService: MedicoService,
                private router: Router,
