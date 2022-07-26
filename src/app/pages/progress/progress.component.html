@@ -1,55 +1,446 @@
-<div class="row">
-    <div class="col-12">
-        <div class="card">
-            <div class="card-body">
-                
-                <h4 class="card-title">Striped Progress bar</h4>
-                <div class="progress m-t-20">
-                    <div class="progress-bar bg-primary progress-bar-striped active"
-                        style="height:5px;"
-                        [style.width]="getProgreso1"
-                         role="progressbar">
-                        </div>
-                </div>
+<!-- Tarjeta contenedora -->
+<mat-card>
+        <!-- start Tab -->
+    <mat-tab-group mat-align-tabs="center">
+        <mat-tab label="Fernando Salguero">
+        <mat-card class="calendar">
+    <h1>Julio</h1>
+    <ol>
+        <li class="diadelasemana">Lunes</li>
+        <li class="diadelasemana">Martes</li>
+        <li class="diadelasemana">Miercoles</li>
+        <li class="diadelasemana">Jueves</li>
+        <li class="diadelasemana">Viernes</li>
+        <li class="diadelasemana">Sabado</li>
+        <li class="diadelasemana">Domingo</li>
 
-                <div class="progress m-t-20">
-                    <div class="progress-bar bg-info progress-bar-striped active"
-                         style="height:5px;"
-                         [style.width]="getProgreso2"
-                         role="progressbar">
-                        </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        <li class="primer-dia">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">27</li>
+        <li>28</li>
+        <li class="dev" matTooltip="Hoy tenes devolución con tu lider">29</li>
+        <li>30</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">31</li>
+    </ol>
+
+    
+</mat-card>
+
+<mat-card class="calendar mes">
+    <h1>Agosto</h1>
+    <ol>
+        <li class="diadelasemana">Lunes</li>
+        <li class="diadelasemana">Martes</li>
+        <li class="diadelasemana">Miercoles</li>
+        <li class="diadelasemana">Jueves</li>
+        <li class="diadelasemana">Viernes</li>
+        <li class="diadelasemana">Sabado</li>
+        <li class="diadelasemana">Domingo</li>
+
+        <li class="primer-dia-agosto">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">23</li>
+        <li>24</li>
+        <li class="dev" matTooltip="Hoy tenes devolución con tu lider">25</li>
+        <li>26</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">31</li>
+    </ol>
+</mat-card>
+
+<mat-card class="calendar">
+    <h1>Setiembre</h1>
+    <ol>
+        <li class="diadelasemana">Lunes</li>
+        <li class="diadelasemana">Martes</li>
+        <li class="diadelasemana">Miercoles</li>
+        <li class="diadelasemana">Jueves</li>
+        <li class="diadelasemana">Viernes</li>
+        <li class="diadelasemana">Sabado</li>
+        <li class="diadelasemana">Domingo</li>
+
+        <li class="primer-dia-setiembre">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">11</li>
+        <li>12</li>
+        <li>13</li>
+        <li class="dev" matTooltip="Hoy tenes devolución con tu lider">14</li>
+        <li>15</li>
+        <li>16</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+
+    </ol>
+
+</mat-card>
+<div>
+    <p>Información de conexión</p>
+    <p>Extención: 123456</p>
+    <p>Agente: 123456</p>
+    <p>CPU: IP:3216,162546,54684</p>
+    <p>Horario: 09hs a 15:00 hs</p>
 </div>
 
-<div class="row">
+    <!-- TABLA CARLA QUINTANA -->
+        </mat-tab>
 
-    <div class="col-6">
-        <div class="card">
-            <div class="card-body">
-    
-                <app-incrementador (valor)="progreso1 = $event" 
-                                   [valor]="progreso1">
-                </app-incrementador>
-    
-            </div>
-        </div>
-    </div>
+        <mat-tab label="Carla Quintana">
+            <mat-card class="calendar">
+    <h1>Julio</h1>
+    <ol>
+        <li class="diadelasemana">Lunes</li>
+        <li class="diadelasemana">Martes</li>
+        <li class="diadelasemana">Miercoles</li>
+        <li class="diadelasemana">Jueves</li>
+        <li class="diadelasemana">Viernes</li>
+        <li class="diadelasemana">Sabado</li>
+        <li class="diadelasemana">Domingo</li>
 
-    <div class="col-6">
-        <div class="card">
-            <div class="card-body">
-    
-                <app-incrementador (valor)="progreso2 = $event" 
-                                    [valor]="progreso2"
-                                    [btnClass]="'btn-info'">
-                </app-incrementador>
-    
-            </div>
-        </div>
-    </div>
+        <li class="primer-dia">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">27</li>
+        <li>28</li>
+        <li class="dev" matTooltip="Hoy tenes devolución con tu lider">29</li>
+        <li>30</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">31</li>
+    </ol>
+</mat-card>
 
+<mat-card class="calendar mes">
+    <h1>Agosto</h1>
+    <ol>
+        <li class="diadelasemana">Lunes</li>
+        <li class="diadelasemana">Martes</li>
+        <li class="diadelasemana">Miercoles</li>
+        <li class="diadelasemana">Jueves</li>
+        <li class="diadelasemana">Viernes</li>
+        <li class="diadelasemana">Sabado</li>
+        <li class="diadelasemana">Domingo</li>
 
+        <li class="primer-dia-agosto">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">23</li>
+        <li>24</li>
+        <li class="dev" matTooltip="Hoy tenes devolución con tu lider">25</li>
+        <li>26</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">31</li>
+    </ol>
+</mat-card>
+
+<mat-card class="calendar">
+    <h1>Setiembre</h1>
+    <ol>
+        <li class="diadelasemana">Lunes</li>
+        <li class="diadelasemana">Martes</li>
+        <li class="diadelasemana">Miercoles</li>
+        <li class="diadelasemana">Jueves</li>
+        <li class="diadelasemana">Viernes</li>
+        <li class="diadelasemana">Sabado</li>
+        <li class="diadelasemana">Domingo</li>
+
+        <li class="primer-dia-setiembre">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+
+        <li  class="franco" matTooltip="Es tu dia de franco">11</li>
+        <li>12</li>
+        <li>13</li>
+        <li class="dev" matTooltip="Hoy tenes devolución con tu lider">14</li>
+        <li>15</li>
+        <li>16</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+
+    </ol>
+</mat-card>
+<div>
+    <p>Información de conexión</p>
+    <p>Extención: 123456</p>
+    <p>Agente: 123456</p>
+    <p>CPU: IP:3216,162546,54684</p>
+    <p>Horario: 09hs a 15:00 hs</p>
 </div>
+</mat-tab>
+
+<!-- TABLA DE LUCIANA -->
+
+        <mat-tab label="Luciana Robles">
+            <mat-card class="calendar">
+    <h1>Julio</h1>
+    <ol>
+        <li class="diadelasemana">Lunes</li>
+        <li class="diadelasemana">Martes</li>
+        <li class="diadelasemana">Miercoles</li>
+        <li class="diadelasemana">Jueves</li>
+        <li class="diadelasemana">Viernes</li>
+        <li class="diadelasemana">Sabado</li>
+        <li class="diadelasemana">Domingo</li>
+
+        <li class="primer-dia">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">27</li>
+        <li>28</li>
+        <li class="dev" matTooltip="Hoy tenes devolución con tu lider">29</li>
+        <li>30</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">31</li>
+    </ol>
+</mat-card>
+
+<mat-card class="calendar mes">
+    <h1>Agosto</h1>
+    <ol>
+        <li class="diadelasemana">Lunes</li>
+        <li class="diadelasemana">Martes</li>
+        <li class="diadelasemana">Miercoles</li>
+        <li class="diadelasemana">Jueves</li>
+        <li class="diadelasemana">Viernes</li>
+        <li class="diadelasemana">Sabado</li>
+        <li class="diadelasemana">Domingo</li>
+
+        <li class="primer-dia-agosto">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">23</li>
+        <li>24</li>
+        <li class="dev" matTooltip="Hoy tenes devolución con tu lider">25</li>
+        <li>26</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">31</li>
+    </ol>
+</mat-card>
+
+<mat-card class="calendar">
+    <h1>Setiembre</h1>
+    <ol>
+        <li class="diadelasemana">Lunes</li>
+        <li class="diadelasemana">Martes</li>
+        <li class="diadelasemana">Miercoles</li>
+        <li class="diadelasemana">Jueves</li>
+        <li class="diadelasemana">Viernes</li>
+        <li class="diadelasemana">Sabado</li>
+        <li class="diadelasemana">Domingo</li>
+
+        <li class="primer-dia-setiembre">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">11</li>
+        <li>12</li>
+        <li>13</li>
+        <li class="dev" matTooltip="Hoy tenes devolución con tu lider">14</li>
+        <li>15</li>
+        <li>16</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li  class="franco" matTooltip="Es tu dia de franco">27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+
+    </ol>
+</mat-card>
+<div>
+    <p>Información de conexión</p>
+    <p>Extención: 123456</p>
+    <p>Agente: 123456</p>
+    <p>CPU: IP:3216,162546,54684</p>
+    <p>Horario: 09hs a 15:00 hs</p>
+</div>
+</mat-tab>
+</mat-tab-group>
+<!-- end Tab -->
+</mat-card>

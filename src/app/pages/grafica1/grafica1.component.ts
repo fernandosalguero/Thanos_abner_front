@@ -7,15 +7,8 @@ import { KPIinterface } from '../../interfaces/KPI.interface';
   templateUrl: './grafica1.component.html',
   styleUrls: [ './grafica1.component.css'  ]
 })
-export class Grafica1Component implements OnInit {
+export class Grafica1Component {
 
- KPI: KPIinterface[] = []; 
-
-constructor(private kpiService: KPIService){}
-
-
-  ngOnInit(): void {
-    this.kpiService.getKPI().subscribe((KPI) => (this.KPI = KPI))
-  }
+ 
   
 }

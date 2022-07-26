@@ -29,7 +29,7 @@ const childRoutes: Routes = [
   { path: 'rxjs', component: RxjsComponent, data: { titulo: 'Metricas individuales' }},
 
   // Mantenimientos
-  { path: 'hospitales', component: HospitalesComponent, data: { titulo: 'Metriacas individuales' }},
+  { path: 'hospitales', component: HospitalesComponent, data: { titulo: 'Metricas individuales' }},
   { path: 'medicos', component: MedicosComponent, data: { titulo: 'Programacion' }},
   { path: 'medico/:id', component: MedicoComponent, data: { titulo: 'Programacion' }},
 

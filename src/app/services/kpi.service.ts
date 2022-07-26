@@ -11,9 +11,16 @@ export class KPIService {
 
 private apiURL = 'http://localhost:3001/posts';
 
+private apiURLenfoque = 'http://localhost:3001/enfoque';
+
   constructor( private http: HttpClient) { }
 
 getKPI(): Observable<KPIinterface[]>{
   return this.http.get<KPIinterface[]>(this.apiURL)
 }
+
+getEnfoque(): Observable<KPIService[]>{
+  return this.http.get<KPIService[]>(this.apiURLenfoque)
+}
+
 }

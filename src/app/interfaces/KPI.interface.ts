@@ -28,4 +28,12 @@ export interface KPIinterface {
     Licencia_Prolongada: string;
     Llegadas_Tarde: number;
     Premios: string;
+
+    Fecha: string;
+    IDdeCaso: number;
+    Grupo: string;
+    ASESOR: string;
+    Respuesta: number;
+    Satisfaccion: string;
+    NPS: string;
 }

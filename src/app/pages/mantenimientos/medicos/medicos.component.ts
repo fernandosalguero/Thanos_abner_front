@@ -13,8 +13,7 @@ import { ModalImagenService } from '../../../services/modal-imagen.service';
 @Component({
   selector: 'app-medicos',
   templateUrl: './medicos.component.html',
-  styles: [
-  ]
+  styleUrls: [ './medicos.component.css' ]
 })
 export class MedicosComponent implements OnInit, OnDestroy {
 

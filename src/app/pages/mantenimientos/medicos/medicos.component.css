@@ -1,13 +1,4 @@
-.mat-tab-group {
-    margin-bottom: 48px;
-  }
-
-  .titulo{
-    text-align: center;
-    color: blue;
-  }
-
-  ol{
+ol{
     list-style: none;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -42,11 +33,6 @@ grid-column-start: 5;
 }
 
 .calendar{
-    justify-content: center;
     text-align: center;
     margin: 25px;
-}
-
-.mes{
-    background-color:rgb(218, 255, 243);
 }
