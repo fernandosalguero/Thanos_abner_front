@@ -46,7 +46,7 @@
       <!-- Name Column -->
       <ng-container matColumnDef="Respuesta">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Respuesta </th>
-        <td mat-cell *matCellDef="let element"> {{element.Respuesta}} </td>
+        <td class="nota" mat-cell *matCellDef="let element" [ngStyle]="{'background-color': element.Respuesta <= '4' ? 'red' : 'green'}"> {{element.Respuesta}} </td>
       </ng-container>
     
       <!-- Weight Column -->
