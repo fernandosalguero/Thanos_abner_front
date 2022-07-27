@@ -15,6 +15,9 @@ import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
 
+// tarjetas
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+
 
 @NgModule({
   declarations: [],
@@ -32,7 +35,8 @@ import {MatSortModule} from '@angular/material/sort';
     MatTabsModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    NgxChartsModule
   ],
 
   exports:[
@@ -47,7 +51,8 @@ import {MatSortModule} from '@angular/material/sort';
     MatTabsModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    NgxChartsModule
   ],
 
 })
